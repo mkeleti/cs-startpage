@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import { Box, Code, Text } from '@mantine/core'
 import Card from '../components/Card'
 import Grid from '../components/Grid'
@@ -23,7 +22,6 @@ const Home: NextPage = () => {
       <Box
         component="main"
         sx={{
-          minHeight: '100vh',
           display: 'flex',
           paddingTop: '2rem',
           paddingBottom: '2rem',
@@ -91,30 +89,6 @@ const Home: NextPage = () => {
             link="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           />
         </Grid>
-      </Box>
-
-      <Box
-        component="footer"
-        sx={{
-          display: 'flex',
-          flex: '1',
-          paddingTop: '2rem',
-          paddingBottom: '2rem',
-          borderTop: '1px solid #eaeaea',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Box component="span" sx={{ height: '1rem', marginLeft: '1.5rem' }}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </Box>
-        </a>
       </Box>
     </Box>
   )

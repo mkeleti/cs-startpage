@@ -1,7 +1,10 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { MantineProvider, AppShell, Header } from '@mantine/core'
+import { MantineProvider, AppShell } from '@mantine/core'
 import { NavbarNested} from "../components/Navbar/Navbar";
+import { HeaderSimple} from "../components/Header/Header";
+
+const links = [{link: '/', label: 'Home' }, { link: '/about', label: 'About' }];
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -21,8 +24,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     >
         <AppShell
             padding="md"
+            zIndex={50}
             navbar={<NavbarNested />}
-            header={<Header height={70}>sjd</Header>}
+            header={<HeaderSimple links={links} />}
             >
       <Component {...pageProps} />
         </AppShell>
