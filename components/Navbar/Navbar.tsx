@@ -13,39 +13,30 @@ import { LinksGroup } from './NavbarLinkGroup';
 import { Logo } from './Logo';
 
 const mockdata = [
-    { label: 'Dashboard', icon: IconGauge },
+    { label: 'Dashboard', icon: IconGauge, link: '/' },
     {
-        label: 'Market news',
+        label: 'Learn',
         icon: IconNotes,
         initiallyOpened: true,
         links: [
             { label: 'Overview', link: '/' },
-            { label: 'Forecasts', link: '/' },
-            { label: 'Outlook', link: '/' },
-            { label: 'Real time', link: '/' },
+            { label: 'Khan Academy', link: '/' },
+            { label: 'CourseEra', link: '/' },
+            { label: 'Canvas', link: '/' },
         ],
     },
     {
-        label: 'Releases',
+        label: 'Inform',
         icon: IconCalendarStats,
         links: [
-            { label: 'Upcoming releases', link: '/' },
-            { label: 'Previous releases', link: '/' },
-            { label: 'Releases schedule', link: '/' },
+            { label: 'RSS Feed Group #1', link: '/' },
+            { label: 'RSS Feed Group #2', link: '/' },
+            { label: 'RSS Feed Group #3', link: '/' },
         ],
     },
-    { label: 'Analytics', icon: IconPresentationAnalytics },
-    { label: 'Contracts', icon: IconFileAnalytics },
+    { label: 'Socialize', icon: IconPresentationAnalytics },
+    { label: 'Entertain', icon: IconFileAnalytics },
     { label: 'Settings', icon: IconAdjustments },
-    {
-        label: 'Security',
-        icon: IconLock,
-        links: [
-            { label: 'Enable 2FA', link: '/' },
-            { label: 'Change password', link: '/' },
-            { label: 'Recovery codes', link: '/' },
-        ],
-    },
 ];
 
 const useStyles = createStyles((theme) => ({

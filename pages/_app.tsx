@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import { MantineProvider, AppShell } from '@mantine/core'
 import { NavbarNested} from "../components/Navbar/Navbar";
 import { HeaderSimple} from "../components/Header/Header";
+import "../Firebase";
 
 const links = [{link: '/', label: 'Home' }, { link: '/about', label: 'About' }];
 
