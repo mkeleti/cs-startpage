@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Box, Code, Text } from '@mantine/core'
 import Card from '../components/Card'
 import Grid from '../components/Grid'
+import SearchEngine from '../components/SearchEngine'
 
 const Home: NextPage = () => {
   return (
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
           alignItems: 'center',
         }}
       >
+          <SearchEngine engine="Google"/>
         <Text
           sx={{
             color: '#0070f3',
