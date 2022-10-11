@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { MantineProvider } from '@mantine/core'
+import { MantineProvider, AppShell, Navbar, Header } from '@mantine/core'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -18,7 +18,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         },
       }}
     >
+        <AppShell
+            padding="md"
+            navbar={<Navbar width={{base: 300}}>Education Startpage</Navbar>}
+            header={<Header height={70}>sjd</Header>}
+            >
       <Component {...pageProps} />
+        </AppShell>
     </MantineProvider>
   )
 }
