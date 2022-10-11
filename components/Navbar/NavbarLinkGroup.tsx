@@ -102,7 +102,7 @@ const mockdata = {
     ],
 };
 
-export function NavbarLinksGroup() {
+export function NavbarLinkGroup() {
     return (
         <Box
             sx={(theme) => ({

@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { MantineProvider, AppShell, Navbar, Header } from '@mantine/core'
+import { MantineProvider, AppShell, Header } from '@mantine/core'
+import { NavbarNested} from "../components/Navbar/Navbar";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -20,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     >
         <AppShell
             padding="md"
-            navbar={<Navbar width={{base: 300}}>Education Startpage</Navbar>}
+            navbar={<NavbarNested />}
             header={<Header height={70}>sjd</Header>}
             >
       <Component {...pageProps} />
